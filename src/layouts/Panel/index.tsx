@@ -1,6 +1,5 @@
-import React from 'react';
-
 import clsx from 'clsx';
+import React from 'react';
 import { animated, useSpring } from 'react-spring';
 
 import { Container } from '../../components/Container';
@@ -10,7 +9,7 @@ import { Main } from '../../components/Main';
 import { Section } from '../../components/Section';
 import { SEO } from '../../components/SEO';
 import { useTheme } from '../../contexts/Theme';
-import { PanelLayoutProps } from './types';
+import type { PanelLayoutProps } from './types';
 
 export const PanelLayout = ({
   children,
@@ -48,7 +47,7 @@ export const PanelLayout = ({
           className: clsx(
             'min-h-screen md:min-h-auto',
             'flex flex-col flex-nowrap',
-            'p-0 sm:p-0 xs:p-0',
+            'p-0 xs:p-0 sm:p-0',
             'md:items-end',
             container?.className
           ),
@@ -65,11 +64,11 @@ export const PanelLayout = ({
           color="primary"
           {...panelProps}
           className={clsx(
-            'md:shadow-md flex flex-col flex-nowrap',
+            'flex flex-col flex-nowrap md:shadow-md',
             'min-h-screen md:min-h-auto',
             'max-w-none md:max-w-screen-sm',
             'md:my-6 md:mx-4 lg:mx-6 xl:m-8',
-            'p-0 sm:p-0 xs:p-0 xl:py-2',
+            'p-0 xs:p-0 sm:p-0 xl:py-2',
             panelProps?.className
           )}
         >

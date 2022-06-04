@@ -1,6 +1,5 @@
-import React from 'react';
-
 import clsx from 'clsx';
+import React from 'react';
 
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
@@ -10,7 +9,7 @@ import { Main } from '../../components/Main';
 import { SEO } from '../../components/SEO';
 import { Wrapper } from '../../components/Wrapper';
 import { useTheme } from '../../contexts/Theme';
-import { PageLayoutProps } from './types';
+import type { PageLayoutProps } from './types';
 
 export const PageLayout = ({
   children,

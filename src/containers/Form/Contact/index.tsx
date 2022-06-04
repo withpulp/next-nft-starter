@@ -1,15 +1,15 @@
-import React, { useState, useRef } from 'react';
-
 import clsx from 'clsx';
+import React, { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { useForm, SubmitHandler } from 'react-hook-form';
+import type { SubmitHandler } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 import { Box } from '../../../components/Box';
 import { Form } from '../../../components/Form';
 import { FormField } from '../../../components/Form/Field';
 import { Text } from '../../../components/Text';
 import styles from './ContactForm.module.scss';
-import { ContactFormProps, ContactFormData } from './types';
+import type { ContactFormData, ContactFormProps } from './types';
 
 export const ContactForm = ({ className, ...rest }: ContactFormProps) => {
   const {

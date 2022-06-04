@@ -2,10 +2,12 @@ import type { ReactNode } from 'react';
 
 import type { FlexBoxProps } from '@/components/Box/Flex/types';
 
-import type { SectionProps } from '../types';
+import type { CardProps } from '../types';
 
-export interface SplitSectionProps extends SectionProps {
-  isResponsive?: boolean;
+export type SplitCardPattern = 'responsive' | 'static';
+
+export interface SplitCardProps extends CardProps {
+  is?: SplitCardPattern;
   isReversed?: boolean;
   left?: Element | ReactNode;
   leftProps?: FlexBoxProps;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { PageLayout } from '../../layouts/Page';
-import { PageTemplateProps } from './types';
+import type { PageTemplateProps } from './types';
 
 export const PageTemplate = ({
   children,

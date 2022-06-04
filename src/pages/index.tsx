@@ -31,7 +31,7 @@ const Index = () => {
           }
         >
           <Image
-            alt="Next Starter Logo"
+            alt="Next NFT Starter Logo"
             layout="fixed"
             src={`${router.basePath}/assets/images/logo.png`}
             width={250}

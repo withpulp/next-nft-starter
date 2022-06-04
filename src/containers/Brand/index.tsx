@@ -3,12 +3,13 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import { NextLink as Link } from '../../components/Link';
-import type { NextLinkProps as LinkProps } from '../../components/Link/types';
-import { Text } from '../../components/Text';
-import type { TextSize } from '../../components/Text/types';
-import { AppConfig } from '../../config/AppConfig';
-import { useTheme } from '../../contexts/Theme';
+import { NextLink as Link } from '@/components/Link';
+import type { NextLinkProps as LinkProps } from '@/components/Link/types';
+import { Text } from '@/components/Text';
+import type { TextSize } from '@/components/Text/types';
+import { AppConfig } from '@/config/AppConfig';
+import { useTheme } from '@/contexts/Theme';
+
 import styles from './Brand.module.scss';
 import type { BrandProps } from './types';
 

@@ -1,8 +1,11 @@
-import { ReactNode } from 'react';
+import type { ImageProps } from 'next/image';
+import type { ReactNode } from 'react';
 
-import { ImageProps } from 'next/image';
-
-import { TextPattern, TextProps, TextSize } from '../../components/Text/types';
+import type {
+  TextPattern,
+  TextProps,
+  TextSize,
+} from '../../components/Text/types';
 
 export interface BrandProps extends Omit<TextProps, 'is' | 'name' | 'size'> {
   href?: string;

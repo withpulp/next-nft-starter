@@ -1,12 +1,15 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
-import { FooterProps } from '../../components/Footer/types';
-import { HeaderProps } from '../../components/Header/types';
-import { PageHeelProps } from '../../components/Heel/Page/types';
-import { PageHeroProps } from '../../components/Hero/Page/types';
-import { MainProps } from '../../components/Main/types';
-import { SEOProps } from '../../components/SEO/types';
-import { WrapperPattern, WrapperProps } from '../../components/Wrapper/types';
+import type { FooterProps } from '../../components/Footer/types';
+import type { HeaderProps } from '../../components/Header/types';
+import type { PageHeelProps } from '../../components/Heel/Page/types';
+import type { PageHeroProps } from '../../components/Hero/Page/types';
+import type { MainProps } from '../../components/Main/types';
+import type { SEOProps } from '../../components/SEO/types';
+import type {
+  WrapperPattern,
+  WrapperProps,
+} from '../../components/Wrapper/types';
 
 export type PageLayoutPattern = 'content' | 'default';
 

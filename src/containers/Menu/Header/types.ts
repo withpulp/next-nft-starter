@@ -1,9 +1,9 @@
-import {
+import type {
   LinkColor,
   NextLinkProps as LinkProps,
 } from '../../../components/Link/types';
-import { NavProps } from '../../../components/Nav/types';
-import { ThemeSwitchProps } from '../../../contexts/Theme/types';
+import type { NavProps } from '../../../components/Nav/types';
+import type { ThemeSwitchProps } from '../../../contexts/Theme/types';
 
 export type HeaderMenuPattern = 'default' | 'mobile';
 

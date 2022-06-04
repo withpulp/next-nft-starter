@@ -1,4 +1,4 @@
-import { FormProps } from '../../../components/Form/types';
+import type { FormProps } from '../../../components/Form/types';
 
 export type ContactFormData = {
   name: string;

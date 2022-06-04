@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { PanelLayout } from '../../layouts/Panel';
-import { PanelTemplateProps } from './types';
+import type { PanelTemplateProps } from './types';
 
 export const PanelTemplate = ({
   children,

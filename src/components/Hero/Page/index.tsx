@@ -32,8 +32,7 @@ export const PageHero = ({
           is: 'subheading',
           ...caption?.subheadingProps,
           className: clsx(
-            'mt-4 pt-4',
-            'border-t-4 border-solid border-accent',
+            'mt-4 md:mt-5 xl:mt-6',
             'font-thin',
             caption?.subheadingProps?.className
           ),
@@ -44,7 +43,7 @@ export const PageHero = ({
         is: is === 'content' ? 'content' : 'default',
       }}
       className={clsx(
-        'min-h-screen-3/4 md:min-h-screen-3/5 xl:min-h-screen-1/2',
+        'min-h-screen-3/4 md:min-h-screen-2/3 xl:min-h-screen-3/5',
         className
       )}
     >

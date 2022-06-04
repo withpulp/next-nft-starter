@@ -1,13 +1,12 @@
-import React from 'react';
-
 import clsx from 'clsx';
+import React from 'react';
 import { CgCopyright } from 'react-icons/cg';
 
 import { NextLink as Link } from '../../components/Link';
 import { Text } from '../../components/Text';
 import { Wrapper } from '../../components/Wrapper';
 import { AppConfig } from '../../config/AppConfig';
-import { CopyrightProps } from './types';
+import type { CopyrightProps } from './types';
 
 export const Copyright = ({
   className,
@@ -28,8 +27,8 @@ export const Copyright = ({
         is="caption"
         {...text}
         className={clsx(
-          'block xs:flex text-center xs:text-left items-center',
-          'gap-0.5 sm:gap-0.75 md:gap-1',
+          'block items-center text-center xs:flex xs:text-left',
+          'sm:gap-0.75 gap-0.5 md:gap-1',
           text?.className
         )}
       >
