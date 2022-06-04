@@ -1,9 +1,7 @@
 import fs from 'fs';
-import path from 'path';
-
-import React from 'react';
-
 import matter from 'gray-matter';
+import path from 'path';
+import React from 'react';
 
 import { NextLink as Link } from '../../components/Link';
 import { Section } from '../../components/Section';

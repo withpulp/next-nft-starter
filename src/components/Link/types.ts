@@ -1,6 +1,6 @@
-import { LinkProps } from 'next/link';
+import type { LinkProps } from 'next/link';
 
-import { TextColor, TextPattern, TextProps } from '../Text/types';
+import type { TextColor, TextPattern, TextProps } from '../Text/types';
 
 export type LinkPattern = 'blended' | 'accented';
 

@@ -1,6 +1,5 @@
-import { HTMLProps } from 'react';
-
-import { UseFormRegisterReturn } from 'react-hook-form';
+import type { HTMLProps } from 'react';
+import type { UseFormRegisterReturn } from 'react-hook-form';
 
 // input types: https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
 export type InputType =

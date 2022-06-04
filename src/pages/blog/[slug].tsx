@@ -1,16 +1,14 @@
-import fs from 'fs';
-import path from 'path';
-
-import React from 'react';
-
 import clsx from 'clsx';
+import fs from 'fs';
 import matter from 'gray-matter';
 import { serialize } from 'next-mdx-remote/serialize';
+import path from 'path';
+import React from 'react';
 
 import { Section } from '../../components/Section';
 import { PageTemplate } from '../../templates/Page';
-import { StaticParams, StaticPaths, StaticProps } from '../../types';
-import { POSTS_PATH, postFilePaths } from '../../utils/mdx';
+import type { StaticParams, StaticPaths, StaticProps } from '../../types';
+import { postFilePaths, POSTS_PATH } from '../../utils/mdx';
 import { MDX } from '../../wrappers/MDX';
 
 const BlogPost = ({ frontmatter, source }: StaticProps) => (
@@ -23,7 +21,7 @@ const BlogPost = ({ frontmatter, source }: StaticProps) => (
     <Section
       container={{
         className: clsx(
-          'flex flex-col col-wrap',
+          'col-wrap flex flex-col',
           'content-start items-stretch justify-start'
         ),
       }}

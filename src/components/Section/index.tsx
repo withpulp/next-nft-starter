@@ -1,11 +1,10 @@
-import React from 'react';
-
 import clsx from 'clsx';
+import React from 'react';
 
 import { Caption } from '../Caption';
 import { Container } from '../Container';
 import { Wrapper } from '../Wrapper';
-import { SectionProps } from './types';
+import type { SectionProps } from './types';
 
 export const Section = ({
   caption,
@@ -32,19 +31,19 @@ export const Section = ({
       is === 'feature' &&
         'content-center items-center justify-center py-24 md:py-26 xl:py-28',
       is === 'heel' && 'content-end items-end py-14 md:py-16 xl:py-18',
-      is === 'hero' && 'content-center items-center justify-center z-10',
-      is === 'layout' && 'content-center items-center justify-center p-0 m-0',
-      is === 'main' && 'flex-1 my-0 p-0',
+      is === 'hero' && 'z-10 content-center items-center justify-center',
+      is === 'layout' && 'm-0 content-center items-center justify-center p-0',
+      is === 'main' && 'my-0 flex-1 p-0',
       is === 'topbar' &&
-        'flex-none content-center items-start py-4 md:py-5 xl:py-6 z-40',
+        'z-40 flex-none content-center items-start py-4 md:py-5 xl:py-6',
       mod?.includes('col') && 'flex-col flex-nowrap',
       mod?.includes('compact') && 'my-0 p-0',
       mod?.includes('fluid') &&
-        'xs:relative xs:inset-x-1/2 xs:w-screen -mx-4 xs:-mx-vw-1/2',
-      mod?.includes('full') && 'flex-full mx-auto max-w-none',
+        '-mx-4 xs:relative xs:inset-x-1/2 xs:-mx-vw-1/2 xs:w-screen',
+      mod?.includes('full') && 'mx-auto max-w-none flex-full',
       mod?.includes('inherit') && 'bg-inherit text-inherit',
       mod?.includes('row') && 'flex-row flex-wrap',
-      mod?.includes('transparent') && 'bg-transparent border-transparent',
+      mod?.includes('transparent') && 'border-transparent bg-transparent',
       vh === 'auto' && 'min-h-auto',
       vh === 'full' && 'min-h-screen',
       vh === '11/12' && 'min-h-11/12',

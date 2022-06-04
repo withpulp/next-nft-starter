@@ -1,9 +1,8 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
 import { Box } from '../Box';
-import { ContainerProps } from './types';
+import type { ContainerProps } from './types';
 
 export const Container = <E extends HTMLElement = HTMLDivElement>({
   as = 'figure',
@@ -16,7 +15,7 @@ export const Container = <E extends HTMLElement = HTMLDivElement>({
     as={as}
     {...rest}
     className={clsx(
-      is === 'fluid' ? 'flex-1 w-full mx-auto p-0' : 'container',
+      is === 'fluid' ? 'mx-auto w-full flex-1 p-0' : 'container',
       is === 'card' && 'max-w-screen-xs',
       is === 'content' && 'max-w-screen-lg',
       is === 'default' && 'max-w-screen-xl',

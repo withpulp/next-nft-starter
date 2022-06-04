@@ -1,5 +1,5 @@
-import { BoxProps } from '../Box/types';
-import { TextProps } from '../Text/types';
+import type { BoxProps } from '../Box/types';
+import type { TextProps } from '../Text/types';
 
 export interface CardProps extends BoxProps {
   subtitle?: string;

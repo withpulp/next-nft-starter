@@ -1,6 +1,6 @@
-import { LinkProps } from 'next/link';
+import type { LinkProps } from 'next/link';
 
-import { ButtonProps } from '../../Button/types';
+import type { ButtonProps } from '../../Button/types';
 
 export interface ButtonLinkProps<E extends HTMLSpanElement = HTMLButtonElement>
   extends Omit<ButtonProps<E>, 'ref'> {

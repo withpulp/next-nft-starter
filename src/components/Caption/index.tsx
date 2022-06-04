@@ -1,13 +1,12 @@
-import React from 'react';
-
 import clsx from 'clsx';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { animated, useSpring } from 'react-spring';
 
 import { Box } from '../Box';
 import { NextLink as Link } from '../Link';
 import { getTextAlign, Text } from '../Text';
-import { CaptionProps } from './types';
+import type { CaptionProps } from './types';
 
 export const Caption = ({
   align,
@@ -47,7 +46,7 @@ export const Caption = ({
       })}
       {...rest}
       className={clsx(
-        'max-w-screen-lg z-10',
+        'z-10 max-w-screen-lg',
         align && getTextAlign(align),
         className
       )}
@@ -60,7 +59,7 @@ export const Caption = ({
             text="subheading"
             {...metaLinkProps}
             className={clsx(
-              'mb-4 md:mb-5 xl:mb-6 font-normal',
+              'mb-4 font-normal md:mb-5 xl:mb-6',
               metaLinkProps?.className
             )}
             href={metaLink}
@@ -72,7 +71,7 @@ export const Caption = ({
             as="small"
             is="subheading"
             {...metaProps}
-            className="mb-4 md:mb-5 xl:mb-6 font-normal"
+            className="mb-4 font-normal md:mb-5 xl:mb-6"
           >
             {meta}
           </Text>

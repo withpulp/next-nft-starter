@@ -1,4 +1,4 @@
-import { BoxColor, BoxProps } from '../Box/types';
+import type { BoxColor, BoxProps } from '../Box/types';
 
 export type TextAlign = 'center' | 'justify' | 'left' | 'right';
 

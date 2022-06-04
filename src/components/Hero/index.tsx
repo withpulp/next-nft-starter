@@ -1,9 +1,8 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
 import { Section } from '../Section';
-import { HeroProps } from './types';
+import type { HeroProps } from './types';
 
 export const Hero = ({
   as = 'header',

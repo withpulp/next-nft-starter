@@ -1,7 +1,7 @@
-import { FieldError, UseFormRegisterReturn } from 'react-hook-form';
+import type { FieldError, UseFormRegisterReturn } from 'react-hook-form';
 
-import { WrapperProps } from '../../Wrapper/types';
-import { TextInputProps, InputType } from '../Input/types';
+import type { WrapperProps } from '../../Wrapper/types';
+import type { InputType, TextInputProps } from '../Input/types';
 
 export interface FormFieldProps extends WrapperProps {
   error?: FieldError;

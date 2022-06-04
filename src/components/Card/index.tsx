@@ -1,10 +1,9 @@
-import React from 'react';
-
 import clsx from 'clsx';
+import React from 'react';
 
 import { Box } from '../Box';
 import { Text } from '../Text';
-import { CardProps } from './types';
+import type { CardProps } from './types';
 
 export const Card = ({
   children,

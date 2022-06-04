@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-
 import clsx from 'clsx';
+import React, { useEffect, useState } from 'react';
 import { CgClose, CgMenu } from 'react-icons/cg';
 import { useMedia } from 'react-use';
 
@@ -8,7 +7,7 @@ import { Brand } from '../../containers/Brand';
 import { HeaderMenu } from '../../containers/Menu/Header';
 import { Button } from '../Button';
 import { SplitSection } from '../Section/Split';
-import { HeaderProps } from './types';
+import type { HeaderProps } from './types';
 
 export const Header = ({
   brand,
@@ -62,7 +61,7 @@ export const Header = ({
       color={color}
       {...rest}
       className={clsx(
-        'fixed w-full z-30 py-4 md:py-5 xl:py-6',
+        'fixed z-30 w-full py-4 md:py-5 xl:py-6',
         is === 'page' && 'm-0',
         isFixed || fixed ? 'fixed top-0 left-0' : 'bg-transparent',
         className
@@ -84,9 +83,9 @@ export const Header = ({
               {isMobile ? (
                 <Button is="icon" className="z-10" onClick={toggleMenu}>
                   {menuOpened ? (
-                    <CgClose className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
+                    <CgClose className="h-6 w-6 md:h-8 md:w-8 xl:h-10 xl:w-10" />
                   ) : (
-                    <CgMenu className="w-6 h-5 md:w-8 md:h-6 xl:w-10 xl:h-10" />
+                    <CgMenu className="h-5 w-6 md:h-6 md:w-8 xl:h-10 xl:w-10" />
                   )}
                 </Button>
               ) : (

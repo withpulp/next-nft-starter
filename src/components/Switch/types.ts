@@ -1,5 +1,5 @@
-import { BoxColor, BoxProps } from '../Box/types';
-import { TextSize } from '../Text/types';
+import type { BoxColor, BoxProps } from '../Box/types';
+import type { TextSize } from '../Text/types';
 
 export type SwitchPattern = 'default' | 'pill';
 

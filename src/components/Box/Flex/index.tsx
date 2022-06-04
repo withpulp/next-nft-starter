@@ -1,9 +1,8 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
 import { Box } from '..';
-import { FlexBoxProps } from './types';
+import type { FlexBoxProps } from './types';
 
 export const FlexBox = ({
   children,

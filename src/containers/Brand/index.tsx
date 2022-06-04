@@ -1,17 +1,16 @@
-import React from 'react';
-
 import clsx from 'clsx';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import React from 'react';
 
 import { NextLink as Link } from '../../components/Link';
-import { NextLinkProps as LinkProps } from '../../components/Link/types';
+import type { NextLinkProps as LinkProps } from '../../components/Link/types';
 import { Text } from '../../components/Text';
-import { TextSize } from '../../components/Text/types';
+import type { TextSize } from '../../components/Text/types';
 import { AppConfig } from '../../config/AppConfig';
 import { useTheme } from '../../contexts/Theme';
 import styles from './Brand.module.scss';
-import { BrandProps } from './types';
+import type { BrandProps } from './types';
 
 export const getLogoSize = (size: TextSize) => {
   switch (size) {
@@ -41,7 +40,7 @@ export const Brand = ({
   href = '/',
   logo,
   logoProps,
-  multiplier = 2,
+  multiplier = 1,
   name,
   showLink = true,
   showLogo = true,

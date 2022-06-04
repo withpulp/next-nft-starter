@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
-import { CardProps } from '../types';
+import type { CardProps } from '../types';
 
 export type CTACardPattern = 'default' | 'full';
 

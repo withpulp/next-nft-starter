@@ -1,8 +1,8 @@
-import { BrandProps } from '../../containers/Brand/types';
-import { HeaderMenuProps } from '../../containers/Menu/Header/types';
-import { BoxColor } from '../Box/types';
-import { LinkColor } from '../Link/types';
-import { SplitSectionProps } from '../Section/Split/types';
+import type { BrandProps } from '../../containers/Brand/types';
+import type { HeaderMenuProps } from '../../containers/Menu/Header/types';
+import type { BoxColor } from '../Box/types';
+import type { LinkColor } from '../Link/types';
+import type { SplitSectionProps } from '../Section/Split/types';
 
 export type HeaderPattern = 'dashboard' | 'default' | 'page';
 

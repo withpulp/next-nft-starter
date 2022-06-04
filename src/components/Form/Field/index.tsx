@@ -1,12 +1,11 @@
-import React from 'react';
-
 import clsx from 'clsx';
+import React from 'react';
 
 import { Text } from '../../Text';
 import { Wrapper } from '../../Wrapper';
-import { WrapperProps } from '../../Wrapper/types';
+import type { WrapperProps } from '../../Wrapper/types';
 import { TextInput } from '../Input';
-import { FormFieldProps } from './types';
+import type { FormFieldProps } from './types';
 
 export const FormField = ({
   children,

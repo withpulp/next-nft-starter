@@ -1,13 +1,12 @@
-import { useEffect } from 'react';
+import '../styles/main.scss';
 
-import { DefaultSeo } from 'next-seo';
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
+import { DefaultSeo } from 'next-seo';
+import { useEffect } from 'react';
 
 import { AppConfig } from '../config/AppConfig';
 import { ThemeProvider } from '../contexts/Theme';
-
-import '../styles/main.scss';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();

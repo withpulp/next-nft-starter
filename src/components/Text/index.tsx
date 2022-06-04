@@ -1,9 +1,8 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
 import { Box } from '../Box';
-import {
+import type {
   TextAlign,
   TextColor,
   TextPattern,
@@ -106,7 +105,7 @@ export const getTextPattern = (pattern: TextPattern, size?: TextSize) => {
       );
     case 'title':
       return clsx(
-        'block font-heading leading-tight md:leading-tight tracking-wide',
+        'block font-heading leading-tight tracking-wide md:leading-tight',
         size ? getTextSize(size) : getTextSize('2xl')
       );
     case 'body':

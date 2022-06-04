@@ -1,8 +1,8 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
-import { CaptionProps } from '../Caption/types';
-import { ContainerProps } from '../Container/types';
-import { WrapperProps } from '../Wrapper/types';
+import type { CaptionProps } from '../Caption/types';
+import type { ContainerProps } from '../Container/types';
+import type { WrapperProps } from '../Wrapper/types';
 
 export type SectionPattern =
   | 'content'

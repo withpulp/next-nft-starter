@@ -1,10 +1,9 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
-import { Section } from '..';
 import { FlexBox } from '../../Box/Flex';
-import { SplitSectionProps } from './types';
+import { Section } from '..';
+import type { SplitSectionProps } from './types';
 
 export const SplitSection = ({
   children,
@@ -25,7 +24,7 @@ export const SplitSection = ({
       ...container,
       className: clsx(
         isResponsive
-          ? 'flex flex-col flex-nowrap md:flex-row md:flex-wrap items-start'
+          ? 'flex flex-col flex-nowrap items-start md:flex-row md:flex-wrap'
           : 'flex flex-row flex-wrap items-center',
         'content-between justify-between',
         container?.className

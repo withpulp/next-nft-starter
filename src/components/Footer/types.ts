@@ -1,10 +1,10 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
-import { CopyrightProps } from '../../containers/Copyright/types';
-import { ThemeSwitchProps } from '../../contexts/Theme/types';
-import { BoxColor } from '../Box/types';
-import { LinkColor } from '../Link/types';
-import { SectionProps } from '../Section/types';
+import type { CopyrightProps } from '../../containers/Copyright/types';
+import type { ThemeSwitchProps } from '../../contexts/Theme/types';
+import type { BoxColor } from '../Box/types';
+import type { LinkColor } from '../Link/types';
+import type { SectionProps } from '../Section/types';
 
 export type FooterPattern = 'dashboard' | 'default' | 'page';
 

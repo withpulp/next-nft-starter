@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
-import { FlexBoxProps } from '../../Box/Flex/types';
-import { SectionProps } from '../types';
+import type { FlexBoxProps } from '../../Box/Flex/types';
+import type { SectionProps } from '../types';
 
 export interface SplitSectionProps extends SectionProps {
   isResponsive?: boolean;

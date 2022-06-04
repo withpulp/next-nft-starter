@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
-import { SwitchProps } from '../../components/Switch/types';
+import type { SwitchProps } from '../../components/Switch/types';
 
 export type Theme = 'dark' | 'light';
 
@@ -12,5 +12,5 @@ export interface ThemeContextProps {
 export interface ThemeSwitchProps extends SwitchProps {}
 
 export interface ThemeProviderProps {
-  children?: Element | ReactNode;
+  children?: ReactNode;
 }

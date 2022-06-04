@@ -1,11 +1,10 @@
-import React, { forwardRef } from 'react';
-
 import clsx from 'clsx';
 import Link from 'next/link';
+import React, { forwardRef } from 'react';
 
-import { InnerRef } from '../Box/types';
+import type { InnerRef } from '../Box/types';
 import { Text } from '../Text';
-import { LinkColor, NextLinkProps } from './types';
+import type { LinkColor, NextLinkProps } from './types';
 
 export const getLinkColor = (color: LinkColor) => {
   switch (color) {
@@ -52,7 +51,7 @@ export const NextLink = forwardRef(
             'underline hover:underline',
             color && getLinkColor(color),
             is === 'accented' &&
-              'text-inherit focus:text-accent hover:text-accent',
+              'text-inherit hover:text-accent focus:text-accent',
             is === 'blended' && 'text-inherit no-underline',
             className
           )}

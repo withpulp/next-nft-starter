@@ -1,6 +1,6 @@
-import { BoxColor } from '../Box/types';
-import { SectionProps } from '../Section/types';
-import { TextProps } from '../Text/types';
+import type { BoxColor } from '../Box/types';
+import type { SectionProps } from '../Section/types';
+import type { TextProps } from '../Text/types';
 
 export interface HeelProps extends Omit<SectionProps, 'color' | 'form'> {
   color?: BoxColor;

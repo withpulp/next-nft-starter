@@ -1,9 +1,8 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
 import { Section } from '../Section';
-import { HeelProps } from './types';
+import type { HeelProps } from './types';
 
 export const Heel = ({
   as = 'footer',

@@ -1,9 +1,8 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
 import { List } from '../List';
-import { NavProps } from './types';
+import type { NavProps } from './types';
 
 export const Nav = ({
   as = 'nav',
@@ -21,7 +20,7 @@ export const Nav = ({
       text={text}
       {...rest}
       className={clsx(
-        'flex flex-row flex-wrap items-center justify-end order-1',
+        'order-1 flex flex-row flex-wrap items-center justify-end',
         is === 'default' &&
           'space-x-4 xs:space-x-5 sm:space-x-6 md:space-x-7 lg:space-x-8 xl:space-x-9',
         is === 'menu' && 'flex-col flex-nowrap md:flex-row md:flex-wrap',

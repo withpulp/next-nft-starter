@@ -1,4 +1,4 @@
-import { TextProps, TextSize, TextPattern } from '../Text/types';
+import type { TextPattern, TextProps, TextSize } from '../Text/types';
 
 export type ButtonColor = 'inherit' | 'primary' | 'secondary' | 'transparent';
 

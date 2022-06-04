@@ -1,4 +1,4 @@
-import { BoxProps } from '../Box/types';
+import type { BoxProps } from '../Box/types';
 
 export type WrapperPattern = 'col' | 'col-reverse' | 'row' | 'row-reverse';
 

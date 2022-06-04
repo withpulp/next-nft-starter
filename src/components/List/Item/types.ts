@@ -1,4 +1,4 @@
-import { TextProps, TextPattern } from '../../Text/types';
+import type { TextPattern, TextProps } from '../../Text/types';
 
 export type ListItemPattern = 'cell' | 'default' | 'wrapper';
 

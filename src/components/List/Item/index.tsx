@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 
 import { Text } from '../../Text';
-import { TextProps } from '../../Text/types';
-import { ListItemProps } from './types';
+import type { TextProps } from '../../Text/types';
+import type { ListItemProps } from './types';
 
 export const ListItem = <E extends HTMLElement = HTMLLIElement>({
   as = 'li',

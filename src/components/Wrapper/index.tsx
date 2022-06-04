@@ -1,9 +1,8 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
 import { Box } from '../Box';
-import { WrapperProps } from './types';
+import type { WrapperProps } from './types';
 
 export const Wrapper = <E extends HTMLElement = HTMLDivElement>({
   as = 'section',
@@ -23,7 +22,7 @@ export const Wrapper = <E extends HTMLElement = HTMLDivElement>({
       is === 'row-reverse' && 'flex flex-row-reverse',
       wrap === 'nowrap' && 'flex-nowrap',
       wrap === 'reverse' && 'flex-wrap-reverse',
-      wrap === 'wrap' && 'felx-wrap',
+      wrap === 'wrap' && 'flex-wrap',
       className
     )}
   >

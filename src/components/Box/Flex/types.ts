@@ -1,4 +1,4 @@
-import { BoxProps } from '../types';
+import type { BoxProps } from '../types';
 
 export type FlexBoxPattern = 'default' | 'full';
 

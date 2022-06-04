@@ -1,11 +1,10 @@
-import React, { forwardRef } from 'react';
-
 import clsx from 'clsx';
 import Link from 'next/link';
+import React, { forwardRef } from 'react';
 
-import { InnerRef } from '../../Box/types';
+import type { InnerRef } from '../../Box/types';
 import { Button } from '../../Button';
-import { ButtonLinkProps } from './types';
+import type { ButtonLinkProps } from './types';
 
 export const ButtonLink = forwardRef(
   (

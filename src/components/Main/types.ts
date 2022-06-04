@@ -1,4 +1,4 @@
-import { SectionPattern, SectionProps } from '../Section/types';
+import type { SectionPattern, SectionProps } from '../Section/types';
 
 export type MainPattern = 'content' | 'default';
 

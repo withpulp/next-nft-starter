@@ -1,8 +1,8 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
-import { BoxProps } from '../Box/types';
-import { NextLinkProps as LinkProps } from '../Link/types';
-import { TextAlign, TextProps } from '../Text/types';
+import type { BoxProps } from '../Box/types';
+import type { NextLinkProps as LinkProps } from '../Link/types';
+import type { TextAlign, TextProps } from '../Text/types';
 
 export interface CaptionProps extends BoxProps {
   align?: TextAlign;

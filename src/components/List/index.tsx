@@ -1,13 +1,12 @@
-import React from 'react';
-
 import clsx from 'clsx';
 import { random } from 'lodash';
+import React from 'react';
 
 import { Text } from '../Text';
-import { TextProps } from '../Text/types';
+import type { TextProps } from '../Text/types';
 import { ListItem } from './Item';
-import { ListItemProps } from './Item/types';
-import { ListProps } from './types';
+import type { ListItemProps } from './Item/types';
+import type { ListProps } from './types';
 
 export const List = <E extends HTMLElement = HTMLUListElement>({
   as = 'ul',
@@ -26,7 +25,7 @@ export const List = <E extends HTMLElement = HTMLUListElement>({
     {...(rest as TextProps)}
     className={clsx(
       'list-square',
-      is === 'default' && 'flex flex-col flex-full flex-wrap',
+      is === 'default' && 'flex flex-full flex-col flex-wrap',
       is === 'inline' && 'flex flex-row flex-wrap',
       className
     )}

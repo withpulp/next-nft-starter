@@ -1,8 +1,7 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
-import { BoxColor, BoxProps } from './types';
+import type { BoxColor, BoxProps } from './types';
 
 export const boxColor = (color: BoxColor): string => {
   switch (color) {

@@ -1,9 +1,8 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
 import { Box } from '../Box';
-import { SwitchProps } from './types';
+import type { SwitchProps } from './types';
 
 export const Switch = ({
   checked,
@@ -29,7 +28,7 @@ export const Switch = ({
         {...rest}
         className={clsx(
           'relative inline-block',
-          'w-10 align-middle select-none',
+          'w-10 select-none align-middle',
           className
         )}
       >
@@ -46,8 +45,8 @@ export const Switch = ({
             htmlFor={id}
             tabIndex={disabled ? -1 : 1}
             className={clsx(
-              'relative block overflow-hidden cursor-pointer',
-              size === 'sm' && 'h4',
+              'relative block cursor-pointer overflow-hidden',
+              size === 'sm' && 'h-4',
               size === 'md' && 'h-5',
               size === 'lg' && 'h-6',
               color === 'default' && 'bg-paper-accent',
@@ -60,18 +59,18 @@ export const Switch = ({
           >
             <span
               className={clsx(
-                'block absolute top-0 bottom-0',
-                'transition-all duration-250 ease-in',
-                size === 'sm' && 'w-4 h-4',
-                size === 'md' && 'w-5 h-5',
-                size === 'lg' && 'w-6 h-6',
+                'absolute inset-y-0 block',
+                'duration-250 transition-all ease-in',
+                size === 'sm' && 'h-4 w-4',
+                size === 'md' && 'h-5 w-5',
+                size === 'lg' && 'h-6 w-6',
                 color === 'default' && 'bg-paper',
                 color === 'primary' && 'bg-primary-paper',
                 color === 'secondary' && 'bg-secondary-paper',
                 is === 'default' && 'rounded-sm',
                 is === 'pill' && 'rounded-full',
                 checked ? 'right-0' : 'right-5',
-                disabled && 'cursor-not-allowed pointer-events-none bg-gray-500'
+                disabled && 'pointer-events-none cursor-not-allowed bg-gray-500'
               )}
               tabIndex={-1}
             />

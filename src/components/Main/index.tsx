@@ -1,9 +1,8 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
 import { Section } from '../Section';
-import { MainProps } from './types';
+import type { MainProps } from './types';
 
 export const Main = ({
   children,

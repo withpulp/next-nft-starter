@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 import { Card } from '..';
-import { CTACardProps } from './types';
+import type { CTACardProps } from './types';
 
 export const CTACard = ({
   buttons,
@@ -10,7 +10,7 @@ export const CTACard = ({
   is,
   ...rest
 }: CTACardProps) => (
-  <Card {...rest} className={clsx(is === 'default' && 'p-0 m-0', className)}>
+  <Card {...rest} className={clsx(is === 'default' && 'm-0 p-0', className)}>
     {children}
     {buttons}
   </Card>

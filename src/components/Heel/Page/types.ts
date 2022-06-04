@@ -1,4 +1,4 @@
-import { HeelProps } from '../types';
+import type { HeelProps } from '../types';
 
 export type PageHeelPattern = 'content' | 'default';
 

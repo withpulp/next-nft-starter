@@ -1,11 +1,10 @@
-import React from 'react';
-
 import clsx from 'clsx';
+import React from 'react';
 
 import { Copyright } from '../../containers/Copyright';
 import { ThemeSwitch } from '../../contexts/Theme';
 import { Section } from '../Section';
-import { FooterProps } from './types';
+import type { FooterProps } from './types';
 
 export const Footer = ({
   children,
@@ -25,7 +24,7 @@ export const Footer = ({
     is="topbar"
     {...rest}
     className={clsx(
-      'text-sm items-end text-center sm:text-left',
+      'items-end text-center text-sm sm:text-left',
       is === 'page' && 'pt-12 md:pt-14 xl:pt-16',
       className
     )}

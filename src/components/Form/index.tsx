@@ -1,14 +1,13 @@
-import React from 'react';
-
 import clsx from 'clsx';
+import React from 'react';
 
 import { Box } from '../Box';
 import { FlexBox } from '../Box/Flex';
 import { Button } from '../Button';
 import { Text } from '../Text';
 import { FormField } from './Field';
-import { FormFieldProps } from './Field/types';
-import { FormProps } from './types';
+import type { FormFieldProps } from './Field/types';
+import type { FormProps } from './types';
 
 export const renderField = (field: FormFieldProps) => {
   switch (field.type) {
@@ -44,7 +43,7 @@ export const Form = ({
         <FlexBox
           {...actions}
           className={clsx(
-            'col-span-full flex flex-col flex-nowrap items-start justify-start gap-2 mt-4 order-last',
+            'order-last col-span-full mt-4 flex flex-col flex-nowrap items-start justify-start gap-2',
             actions?.className
           )}
         >

@@ -1,9 +1,8 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
 import { Heel } from '..';
-import { PageHeelProps } from './types';
+import type { PageHeelProps } from './types';
 
 export const PageHeel = ({
   caption,

@@ -1,4 +1,4 @@
-import { ElementType, HTMLProps, MutableRefObject } from 'react';
+import type { ElementType, HTMLProps, MutableRefObject } from 'react';
 
 export type InnerRef<E> =
   | ((instance: E | null) => void)
@@ -19,9 +19,10 @@ export type BoxPosition = 'absolute' | 'fixed' | 'relative';
 export interface BoxProps<E extends HTMLElement = HTMLDivElement>
   extends Omit<
     HTMLProps<E>,
-    'as' | 'background' | 'color' | 'content' | 'list' | 'to'
+    'as' | 'background' | 'children' | 'color' | 'content' | 'list' | 'to'
   > {
   as?: ElementType;
+  children?: any;
   color?: BoxColor;
   innerRef?: InnerRef<E>;
   position?: BoxPosition;

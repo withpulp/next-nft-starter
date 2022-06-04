@@ -1,5 +1,5 @@
-import { CTACardProps } from '../../Card/CTA/types';
-import { HeroProps, HeroPattern } from '../types';
+import type { CTACardProps } from '../../Card/CTA/types';
+import type { HeroPattern, HeroProps } from '../types';
 
 export type PageHeroPattern = 'content' | 'default';
 

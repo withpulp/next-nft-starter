@@ -1,4 +1,4 @@
-import { SectionProps } from '../Section/types';
+import type { SectionProps } from '../Section/types';
 
 export type HeroPattern = 'card' | 'default' | 'page' | 'panel';
 

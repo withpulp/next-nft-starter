@@ -1,8 +1,8 @@
-import React from 'react';
-
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import React from 'react';
 
+import { Section } from '../components/Section';
 import { Text } from '../components/Text';
 import { useTheme } from '../contexts/Theme';
 import { PageTemplate } from '../templates/Page';
@@ -19,23 +19,30 @@ const Index = () => {
       heroProps={{ caption: { align: 'center' } }}
       layout="content"
     >
-      <div
-        style={
-          theme === 'dark' ? { filter: 'invert(1)' } : { filter: 'invert(0)' }
-        }
+      <Section
+        container={{
+          className:
+            'flex flex-col md:flex-row flex-nowrap items-center gap-6 md:gap-8 xl:gap-10',
+        }}
       >
-        <Image
-          alt="Next Starter Logo"
-          layout="responsive"
-          src={`${router.basePath}/assets/images/logo.png`}
-          width={1200}
-          height={630}
-        />
-      </div>
-      <Text as="h2" is="hero" className="text-center">
-        Next NFT Starter lets you develop an NFT product site quickly and
-        easily.
-      </Text>
+        <div
+          style={
+            theme === 'dark' ? { filter: 'invert(1)' } : { filter: 'invert(0)' }
+          }
+        >
+          <Image
+            alt="Next Starter Logo"
+            layout="fixed"
+            src={`${router.basePath}/assets/images/logo.png`}
+            width={250}
+            height={250}
+          />
+        </div>
+        <Text as="h2" is="hero" className="text-center md:text-left">
+          Next NFT Starter lets you develop an NFT product site quickly and
+          easily.
+        </Text>
+      </Section>
     </PageTemplate>
   );
 };

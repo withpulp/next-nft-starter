@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
-import { TextProps, TextPattern } from '../Text/types';
-import { ListItemProps } from './Item/types';
+import type { TextPattern, TextProps } from '../Text/types';
+import type { ListItemProps } from './Item/types';
 
 export type ListPattern = 'default' | 'inline';
 

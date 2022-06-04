@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 import { Switch } from '../../components/Switch';
-import { SwitchProps } from '../../components/Switch/types';
-import { ThemeContextProps, Theme, ThemeProviderProps } from './types';
+import type { SwitchProps } from '../../components/Switch/types';
+import type { Theme, ThemeContextProps, ThemeProviderProps } from './types';
 
 // check if color scheme preference for user's OS is configured for dark mode.
 const prefersDarkMode = () =>

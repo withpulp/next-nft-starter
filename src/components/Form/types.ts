@@ -1,8 +1,8 @@
-import { SubmitHandler } from 'react-hook-form';
+import type { SubmitHandler } from 'react-hook-form';
 
-import { FlexBoxProps } from '../Box/Flex/types';
-import { BoxProps } from '../Box/types';
-import { ButtonProps } from '../Button/types';
+import type { FlexBoxProps } from '../Box/Flex/types';
+import type { BoxProps } from '../Box/types';
+import type { ButtonProps } from '../Button/types';
 
 export interface FormProps extends BoxProps {
   actions?: FlexBoxProps;

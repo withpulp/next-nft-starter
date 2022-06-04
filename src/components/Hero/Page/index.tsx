@@ -1,10 +1,9 @@
+import clsx from 'clsx';
 import React from 'react';
 
-import clsx from 'clsx';
-
-import { Hero } from '..';
 import { CTACard } from '../../Card/CTA';
-import { PageHeroProps } from './types';
+import { Hero } from '..';
+import type { PageHeroProps } from './types';
 
 export const PageHero = ({
   caption,

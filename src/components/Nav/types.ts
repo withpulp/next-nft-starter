@@ -1,4 +1,4 @@
-import { ListPattern, ListProps } from '../List/types';
+import type { ListPattern, ListProps } from '../List/types';
 
 export type NavPattern = 'default' | 'metro' | 'menu';
 

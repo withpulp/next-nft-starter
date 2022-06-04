@@ -1,9 +1,9 @@
-import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { NextSeo } from 'next-seo';
 
 import { AppConfig } from '../../config/AppConfig';
-import { SEOProps } from './types';
+import type { SEOProps } from './types';
 
 export const SEO = ({
   canonical,
