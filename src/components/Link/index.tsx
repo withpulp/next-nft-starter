@@ -39,8 +39,8 @@ export const NextLink = forwardRef(
     }: NextLinkProps,
     ref: InnerRef<HTMLAnchorElement>
   ) => (
-    <Link {...linkProps} href={href} rel={rel} target={target} passHref>
-      <a>
+    <Link {...linkProps} href={href} passHref>
+      <a rel={rel} target={target}>
         <Text
           is={text}
           innerRef={ref}

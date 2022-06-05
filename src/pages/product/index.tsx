@@ -123,6 +123,8 @@ const Product = () => {
         banner={
           <Media
             alt="Next NFT Starter Banner Image"
+            authorName="Markus Winkler"
+            authorUrl="https://unsplash.com/@markuswinkler"
             src={`${router.basePath}/assets/images/nft-banner.jpg`}
           />
         }

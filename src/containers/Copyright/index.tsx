@@ -28,7 +28,6 @@ export const Copyright = ({
         {...text}
         className={clsx(
           'block items-center text-center xs:flex xs:text-left',
-          'sm:gap-0.75 gap-0.5 md:gap-1',
           text?.className
         )}
       >
@@ -46,28 +45,34 @@ export const Copyright = ({
               rel="noopener"
               target="_blank"
               {...link}
+              className={clsx('xs:ml-1', link?.className)}
               href={
                 AppConfig.organization.url ||
                 `mailto:${AppConfig.organization.email}`
               }
             >
-              {AppConfig.organization.name}.
+              {AppConfig.organization.name}
             </Link>
+            .
           </>
         ) : (
           showMessage && '.'
         )}
         {showAuthor && AppConfig.copyright?.authorMessage}
         {showAuthor && AppConfig.author?.name ? (
-          <Link
-            is="blended"
-            rel="noopener"
-            target="_blank"
-            {...link}
-            href={AppConfig.author.url || `mailto:${AppConfig.author.email}`}
-          >
-            {AppConfig.author.name}.
-          </Link>
+          <>
+            <Link
+              is="blended"
+              rel="noopener"
+              target="_blank"
+              {...link}
+              className={clsx('xs:ml-1', link?.className)}
+              href={AppConfig.author.url || `mailto:${AppConfig.author.email}`}
+            >
+              {AppConfig.author.name}
+            </Link>
+            .
+          </>
         ) : (
           showAuthor && '.'
         )}

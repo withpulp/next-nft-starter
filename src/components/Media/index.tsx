@@ -1,15 +1,20 @@
 import clsx from 'clsx';
+import { capitalize } from 'lodash';
 import Image from 'next/image';
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { animated, useSpring } from 'react-spring';
 
 import { Box } from '@/components/Box';
+import { NextLink as Link } from '@/components/Link';
+import { Text } from '@/components/Text';
 
 import type { MediaProps } from './types';
 
 export const Media = ({
   alt,
+  authorName,
+  authorUrl,
   children,
   className,
   imageProps,
@@ -48,6 +53,18 @@ export const Media = ({
           height={800}
           {...imageProps}
         />
+      )}
+      {authorName && (
+        <Text is="meta" className="text-right">
+          {is ? `${capitalize(is)} by: ` : 'By: '}
+          {authorUrl ? (
+            <Link href={authorUrl} rel="noreferrer noopener" target="_blank">
+              {authorName}
+            </Link>
+          ) : (
+            authorName
+          )}
+        </Text>
       )}
       {children}
     </Box>
