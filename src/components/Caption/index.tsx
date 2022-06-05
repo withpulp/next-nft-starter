@@ -109,7 +109,7 @@ export const Caption = ({
           is="subtitle"
           {...subheadingProps}
           className={clsx(
-            'mt-2 font-medium tracking-wider',
+            'mt-4 font-medium tracking-wider md:mt-5 xl:mt-6',
             subheadingProps?.className
           )}
         >

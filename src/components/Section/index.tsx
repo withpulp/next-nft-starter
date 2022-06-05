@@ -29,7 +29,7 @@ export const Section = ({
       is === 'content' && 'flex-1 py-20 md:py-22 xl:py-24',
       is === 'cta' && 'content-center justify-center',
       is === 'feature' &&
-        'content-center items-center justify-center py-24 md:py-26 xl:py-28',
+        'content-center items-center justify-center py-32 md:py-40 xl:py-48',
       is === 'heel' && 'content-end items-end py-14 md:py-16 xl:py-18',
       is === 'hero' && 'z-10 content-center items-center justify-center',
       is === 'layout' && 'm-0 content-center items-center justify-center p-0',

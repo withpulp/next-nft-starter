@@ -1,5 +1,6 @@
 .cardBox {
   @apply
     flex-col
-    flex-nowrap;
+    flex-nowrap
+    w-full;
 }

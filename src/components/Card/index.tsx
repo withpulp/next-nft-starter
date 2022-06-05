@@ -3,8 +3,9 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { animated, useSpring } from 'react-spring';
 
-import { Box } from '../Box';
-import { Text } from '../Text';
+import { Box } from '@/components/Box';
+import { Text } from '@/components/Text';
+
 import type { CardProps } from './types';
 
 export const Card = ({
@@ -19,7 +20,7 @@ export const Card = ({
   ...rest
 }: CardProps) => {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0,
     triggerOnce: true,
   });
 
