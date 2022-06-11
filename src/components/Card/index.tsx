@@ -11,6 +11,7 @@ import type { CardProps } from './types';
 export const Card = ({
   children,
   className,
+  header,
   is = 'default',
   spring,
   subtitle,
@@ -40,6 +41,7 @@ export const Card = ({
         className
       )}
     >
+      {header}
       {title && (
         <Text
           as="h4"

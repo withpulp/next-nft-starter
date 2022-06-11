@@ -2,10 +2,12 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import { Section } from '../components/Section';
-import { Text } from '../components/Text';
-import { useTheme } from '../contexts/Theme';
-import { PageTemplate } from '../templates/Page';
+import { FeatureCard } from '@/components/Card/Feature';
+import { NextLink as Link } from '@/components/Link';
+import { Section } from '@/components/Section';
+import { Text } from '@/components/Text';
+import { useTheme } from '@/contexts/Theme';
+import { PageTemplate } from '@/templates/Page';
 
 const Index = () => {
   const router = useRouter();
@@ -16,7 +18,40 @@ const Index = () => {
       title="Next NFT Starter"
       description="Next NFT Starter lets you skip the boring parts of setting up your architecture and lets you get right to the code."
       heading="2 Limitless Memeberships, 1 Mission."
-      heroProps={{ caption: { align: 'center' } }}
+      heroProps={{
+        caption: { align: 'center' },
+        children: (
+          <div className="flex flex-col flex-nowrap gap-4 md:flex-row md:gap-6 xl:gap-8">
+            <FeatureCard
+              header={
+                <Image
+                  alt="Next NFT Starter Logo"
+                  layout="responsive"
+                  src={`${router.basePath}/assets/images/logo.png`}
+                  width={250}
+                  height={250}
+                />
+              }
+              title="Gold Membership"
+              subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+              footer={<Link href="/product">Learn more</Link>}
+            />
+            <FeatureCard
+              header={
+                <Image
+                  alt="Next NFT Starter Logo"
+                  layout="responsive"
+                  src={`${router.basePath}/assets/images/logo.png`}
+                  width={250}
+                  height={250}
+                />
+              }
+              title="Diamond Membership"
+              subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+            />
+          </div>
+        ),
+      }}
       layout="content"
     >
       <Section
