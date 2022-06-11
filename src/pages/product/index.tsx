@@ -24,7 +24,7 @@ const Product = () => {
       cta={{
         title: '1 ETH',
         buttons: (
-          <Button color="secondary" onClick={() => console.log('Mint')}>
+          <Button color="primary" onClick={() => console.log('Mint')}>
             Mint
           </Button>
         ),

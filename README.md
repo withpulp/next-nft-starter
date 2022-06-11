@@ -11,7 +11,7 @@ This starter is based off [Next-Tailwind-Starter](https://github.com/dvzrd/next-
 Run the following command on your local environment:
 
 ```
-git clone --depth=1 https://github.com/dvzrd/next-tailwind-starter.git my-project-name
+git clone --depth=1 https://github.com/withpulp/next-nft-starter.git my-project-name
 cd my-project-name
 yarn
 ```
@@ -32,11 +32,16 @@ Open http://localhost:3000 with your favorite browser to see your project.
 │   └── assets
 │       └── images           # Image used by default template
 ├── src
-│   ├── layout               # Atomic layout components
+|   ├── components           # Reusable Tailwind components
+│   ├── config               # App config and constants
+│   ├── containers           # Components with logic and/or data
+│   ├── contexts             # Contexts, hooks and providers
+│   ├── layouts              # Layout components
 │   ├── pages                # Next JS pages
-│   ├── styles               # PostCSS style folder with Tailwind
-│   ├── templates            # Default template
-│   └── utils                # Utility folder
+│   ├── styles               # Styles with tailwind
+│   ├── templates            # Page layout templates
+│   ├── types                # Global type definitions
+│   └── utils                # Utilities and methods
 ├── tailwind.config.js       # Tailwind CSS configuration
 └── tsconfig.json            # TypeScript configuration
 ```
