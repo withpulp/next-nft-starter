@@ -6,7 +6,6 @@ import type { FeatureCardProps } from './types';
 export const FeatureCard = ({
   children,
   className,
-  footer,
   is = 'bordered',
   ...rest
 }: FeatureCardProps) => (
@@ -17,6 +16,5 @@ export const FeatureCard = ({
     >
       {children}
     </Card>
-    {footer}
   </>
 );

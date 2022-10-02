@@ -34,8 +34,9 @@ const Index = () => {
               }
               title="Gold Membership"
               subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
-              footer={<Link href="/product">Learn more</Link>}
-            />
+            >
+              <Link href="/product">Learn more</Link>
+            </FeatureCard>
             <FeatureCard
               header={
                 <Image
@@ -48,7 +49,9 @@ const Index = () => {
               }
               title="Diamond Membership"
               subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
-            />
+            >
+              <Link href="/product">Learn more</Link>
+            </FeatureCard>
           </div>
         ),
       }}
