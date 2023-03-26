@@ -3,9 +3,12 @@ title: Another Blog Post
 description: This frontmatter description will appear below the title
 ---
 
-This is an example post, with a [link](https://nextjs.org) and a React component:
+This is an example post, with a [link](https://nextjs.org) using markdown syntax and a React component:
 
-<Box>This is a Box Component</Box>
+<Box>
+  This is a Box Component
+  <Link href="https://nextjs.org" target="_blank" rel="noopener noreferer">This is a Link Component</Link>
+</Box>
 
 The title and description are pulled from the MDX file and processed using `gray-matter`. Additionally, links are rendered using a custom component passed to `next-mdx-remote`.
 

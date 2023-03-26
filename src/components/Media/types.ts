@@ -5,7 +5,7 @@ import type { BoxProps } from '@/components/Box/types';
 export type MediaPattern = 'audio' | 'image' | 'video';
 
 export interface MediaProps extends BoxProps {
-  alt?: string;
+  alt: string;
   authorName?: string;
   authorUrl?: string;
   imageProps?: Omit<ImageProps, 'src'>;

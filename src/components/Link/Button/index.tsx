@@ -11,16 +11,14 @@ export const ButtonLink = forwardRef(
     { children, className, href, linkProps, ...rest }: ButtonLinkProps,
     ref: InnerRef<HTMLButtonElement>
   ) => (
-    <Link {...linkProps} href={href} passHref>
-      <a>
-        <Button
-          innerRef={ref}
-          {...rest}
-          className={clsx('underline hover:no-underline', className)}
-        >
-          {children}
-        </Button>
-      </a>
+    <Link {...linkProps} href={href}>
+      <Button
+        innerRef={ref}
+        {...rest}
+        className={clsx('underline hover:no-underline', className)}
+      >
+        {children}
+      </Button>
     </Link>
   )
 );

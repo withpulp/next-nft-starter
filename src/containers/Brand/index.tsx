@@ -64,7 +64,6 @@ export const Brand = ({
       >
         <Image
           alt={`${name || AppConfig.site_name} Logo`}
-          layout="fixed"
           src={`${router.basePath}/assets/images/logo.png`}
           {...logoProps}
           width={size && getLogoSize(size) * multiplier}

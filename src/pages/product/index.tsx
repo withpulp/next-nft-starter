@@ -59,7 +59,6 @@ const Product = () => {
           right={
             <Image
               alt="Next NFT Starter Logo"
-              layout="responsive"
               src={`${router.basePath}/assets/images/logo.png`}
               width={400}
               height={400}
@@ -84,7 +83,6 @@ const Product = () => {
           right={
             <Image
               alt="Next NFT Starter Logo"
-              layout="responsive"
               src={`${router.basePath}/assets/images/logo.png`}
               width={400}
               height={400}
@@ -111,7 +109,6 @@ const Product = () => {
           right={
             <Image
               alt="Next NFT Starter Logo"
-              layout="responsive"
               src={`${router.basePath}/assets/images/logo.png`}
               width={400}
               height={400}

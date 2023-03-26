@@ -39,26 +39,24 @@ export const NextLink = forwardRef(
     }: NextLinkProps,
     ref: InnerRef<HTMLAnchorElement>
   ) => (
-    <Link {...linkProps} href={href} passHref>
-      <a rel={rel} target={target}>
-        <Text
-          is={text}
-          innerRef={ref}
-          size={size}
-          {...rest}
-          className={clsx(
-            'cursor-pointer',
-            'underline hover:underline',
-            color && getLinkColor(color),
-            is === 'accented' &&
-              'text-inherit hover:text-accent focus:text-accent',
-            is === 'blended' && 'text-inherit no-underline',
-            className
-          )}
-        >
-          {children}
-        </Text>
-      </a>
+    <Link {...linkProps} href={href} rel={rel} target={target}>
+      <Text
+        is={text}
+        innerRef={ref}
+        size={size}
+        {...rest}
+        className={clsx(
+          'cursor-pointer',
+          'underline hover:underline',
+          color && getLinkColor(color),
+          is === 'accented' &&
+            'text-inherit hover:text-accent focus:text-accent',
+          is === 'blended' && 'text-inherit no-underline',
+          className
+        )}
+      >
+        {children}
+      </Text>
     </Link>
   )
 );

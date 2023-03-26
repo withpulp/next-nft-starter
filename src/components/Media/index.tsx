@@ -45,14 +45,7 @@ export const Media = ({
       )}
     >
       {is === 'image' && src && (
-        <Image
-          alt={alt}
-          src={src}
-          layout="responsive"
-          width={1200}
-          height={800}
-          {...imageProps}
-        />
+        <Image alt={alt} src={src} width={1200} height={800} {...imageProps} />
       )}
       {authorName && (
         <Text is="meta" className="text-right">

@@ -26,7 +26,6 @@ const Index = () => {
               header={
                 <Image
                   alt="Next NFT Starter Logo"
-                  layout="responsive"
                   src={`${router.basePath}/assets/images/logo.png`}
                   width={250}
                   height={250}
@@ -41,7 +40,6 @@ const Index = () => {
               header={
                 <Image
                   alt="Next NFT Starter Logo"
-                  layout="responsive"
                   src={`${router.basePath}/assets/images/logo.png`}
                   width={250}
                   height={250}
@@ -70,7 +68,6 @@ const Index = () => {
         >
           <Image
             alt="Next NFT Starter Logo"
-            layout="fixed"
             src={`${router.basePath}/assets/images/logo.png`}
             width={250}
             height={250}
